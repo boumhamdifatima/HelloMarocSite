@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Maroc</title>
+    <!--Lien css pour utiliser les icones Font AweSome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--Lien pour utiser les styles css de Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Lien vers notre fichier de style css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+  <body>
+    <header class="cc-header">
+      <nav class="cc-navbar navbar position-fixed navbar-expand-md w-100" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo2.png" alt="Hello Maroc" class="logo">
+          </a>
+          <a class="navbar-brand text-uppercase mx-0 py-3 d-none d-lg-block fw-bolder fs-2" href="index.html">Hello Maroc</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-4">
+                <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="html/apropos.html">A propos</a>
+              </li>
+              <li class="nav-item dropdown pe-4">
+                <a class="nav-link dropdown-toggle" href="html/noscircuits.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nos circuits
+                </a>
+                <ul class="dropdown-menu cc-sousmenu">
+                  <li><a class="dropdown-item" href="html/cardmerveilles.html">Merveilles du Sahara</a></li>
+                  <li><a class="dropdown-item" href="html/cardcasablanca.html">Casablanca</a></li>
+                  <li><a class="dropdown-item" href="html/cardouzoud.html">Cascades d'Ouzoud</a></li>
+                  <li><a class="dropdown-item" href="html/cardmerzouga.html">Caravane de Merzouga</a></li>
+                  <li><a class="dropdown-item" href="html/cardtoubkal.html">Toubkal en famille</a></li>
+                  <li><a class="dropdown-item" href="html/cardessaouira.html">Charme d'Essaouira</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="html/noscircuits.html">Tous Circuits</a></li>
+                </ul>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="html/contact.html">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+          <a id="cc-count-cart" class="nav-link cc-bg-cartshop text-center text-light" href="html/cart.html"></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="banner d-flex justify-content-center align-items-center pt-5">
+      <div class="container my-5 py-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-10 text-center">
+            <h1 class="text-capitalize redressed py-3 banner-desc">Voyage À La Découverte De La Magie Du Maroc</h1>
+            <h3 class="redressed py-5 text-light fs-2 fst-italic d-none d-lg-block">Plongez dans un monde nouveau au Maroc, plein d'aventures, de magie et de découvertes. <br>
+              Avec nous, vous aurez l’opportunité de voyager à travers les merveilleuses régions du Maroc et le voir dans toutes ses couleurs.</h3>
+            <p>
+              <a href="html/noscircuits.html"><button class="btn btn-order btn-lg me-5 rounded-3 merriweather">Découvrir</button></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="merriweather py-5">
+      <div class="container">
+        <div class="row">
+          <div class="card my-5 border-0 rounded-0">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/atlas_min.jpg" class="img-fluid rounded-start" alt="martil">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><a href="#" class="text-body-secondary btn">Last updated 3 mins ago</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 border-0 rounded-0">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><a href="#" class="text-body-secondary btn">Last updated 3 mins ago</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/carousel1/bijoux.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/carousel1/chefchaoun.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/carousel1/kasbah.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card my-5 border-0 rounded-0">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/martil.jpg" class="img-fluid rounded-start" alt="martil">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><a href="#" class="text-body-secondary btn">Last updated 3 mins ago</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="cc-menu py-5 merriweather">
+      <div class="container align-items-end">
+        <div class="row py-5">
+          <h2 class="text-center redressed fs-1 text-light merriweather">Le Maroc est la meilleure destination de voyage.</h2>
+          <p class="text-center text-light pt-3">C'est un pays situé au cœur du globe terrestre, ayant attiré de grands conquérants
+             à travers l'histoire, ce qui a favorisé le brassage de diverses civilisations: Musulmans, Arabes, 
+             Phéniciens, Romains, Berbère, Andalous, Africains… Nous vous invitons à découvrir les richesses 
+             spirituelles et matérielles, dont témoignent la diversité de ses traditions, son folklore, 
+             son artisanat, ses costumes, son architecture et sa gastronomie…</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 align-items-end">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/cave-montagneMaroc.jpg" class="card-img-top" alt="montagne Maroc">
+              <div class="card-body">
+                <h5 class="card-title">Montagne Atlass</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/essaouira-canon.jpg" class="card-img-top" alt="Canon Essaouira">
+              <div class="card-body">
+                <h5 class="card-title">Canon Essaouira</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/imperial1.jpg" class="card-img-top" alt="Ville Imperiale">
+              <div class="card-body">
+                <h5 class="card-title">Ville Imperiale</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 align-items-end py-5">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/maroc-kasbah.jpg" class="card-img-top" alt="Kasbah">
+              <div class="card-body">
+                <h5 class="card-title">Kasbah</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/riad.jpg" class="card-img-top" alt="Riad">
+              <div class="card-body">
+                <h5 class="card-title">Riad</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/sahara1.jpg" class="card-img-top" alt="Désert">
+              <div class="card-body">
+                <h5 class="card-title">Désert</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 align-items-end">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/trekking.jpg" class="card-img-top" alt="Rendoné">
+              <div class="card-body">
+                <h5 class="card-title">Rendoné</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/acceuil/meilleur/trekking1.jpg" class="card-img-top" alt="Trekking">
+              <div class="card-body">
+                <h5 class="card-title">Trekking</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cc-carousel merriweather bg-dark text-light py-5">
+      <div class="container pb-5">
+        <div class="row text-light text-center pt-5">
+          <h2 class="text-uppercase pb-4">Des Aventures exceptionnelles et inoubliables</h2>
+          <div class="col pb-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, 
+            doloremque. Explicabo nisi accusamus hic provident, delectus tempora
+             eaque voluptatibus, placeat illo inventore, nostrum harum commodi 
+             maiores accusantium vero numquam a.
+          </div>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/acceuil/carousel1/lacCrocodile.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lac des crocodiles Agadir</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/acceuil/carousel1/arganier.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Arganier</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/acceuil/carousel1/mosque.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mosqué Casablanca</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/acceuil/carousel1/portEssaouira.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Port Essaouira</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/acceuil/carousel1/porteBleu.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Porte bleue Tetouan</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form py-5">
+      <div class="container">
+        <h2 class="merriweather text-center text-light mb-4">Nous contacter pour plus de détails</h2>
+        <form action="">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user cc-icolor"></i></span>
+                <input type="text" class="form-control" placeholder="Votre nom">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fa-solid fa-archway cc-icolor"></i></label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choisir un circuit</option>
+                  <option value="1">Merveilles du Sahara</option>
+                  <option value="2">Casablanca</option>
+                  <option value="3">Cascades d'Ouzoud</option>
+                  <option value="4">La caravane de Merzouga</option>
+                  <option value="5">Toubkal Atlas</option>
+                  <option value="6">Charme d'Essaouira </option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect02"><i class="fa-solid fa-arrow-up-9-1 cc-icolor"></i></label>
+                <select class="form-select" id="inputGroupSelect02">
+                  <option selected>Nombre de personnes</option>
+                  <option value="1">Une personne</option>
+                  <option value="2">Une famille</option>
+                  <option value="3">Un groupe</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Votre email">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-at cc-icolor"></i></span>
+              </div>
+              <div class="input-group mb-3">                
+                <input type="tel" class="form-control" placeholder="Votre numero tel">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone cc-icolor"></i></span>
+              </div>
+              <div class="input-group mb-3">                
+                <select class="form-select" id="inputGroupSelect02">
+                  <option selected>Pays de résidence</option>
+                  <option value="1">Maroc</option>
+                  <option value="2">Canada</option>
+                  <option value="3">Espagne</option>
+                </select>
+                <label class="input-group-text" for="inputGroupSelect02"><i class="fa-solid fa-location-dot cc-icolor"></i></label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm"></div>
+          </div>
+          <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Préciser le nombre de personnes</span>
+              <input type="text" class="form-control" placeholder="Exemple : 25">
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Autres informations</span>
+              <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="card-body text-center">
+              <input class="btn btn-primary btn-lg fs-4" type="submit" value="Envoyer">
+            </div>  
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="cc-footer pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <a  href="index.html">
+              <img src="images/logo2.png" alt="Hello Maroc" class="logofooter">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <h3 class="redressed py2 text-center">Général</h3>
+            <nav class="nav flex-column text-center">
+              <a class="nav-link active" href="index.html">Acceuil</a>
+              <a class="nav-link" href="html/apropos.html">A propos de nous</a>
+              <a class="nav-link" href="#">Termes & Services</a>
+              <a class="nav-link" href="#">Politique de confidentialité</a>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <h3 class="redressed py2 text-center">Nos Circuits</h3>
+            <nav class="nav flex-column text-center">
+              <a class="nav-link" href="#">Imperial</a>
+              <a class="nav-link" href="#">Désert</a>
+              <a class="nav-link" href="#">Plages et littéraux</a>
+              <a class="nav-link" href="#">Trekking</a>
+              <a class="nav-link" href="#">Montagnes</a>
+              <a class="nav-link" href="#">Histoire</a>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <h3 class="redressed py2 text-center">Suivez-nous</h3>
+            <nav class="nav flex-column text-center">
+              <a class="nav-link" href="#"><i class="fa-brands fa-square-facebook fa-2xl cc-icolor"></i></a>
+              <a class="nav-link" href="#"><i class="fa-brands fa-square-instagram fa-2xl cc-icolor"></i></a>
+              <a class="nav-link" href="#"><i class="fa-brands fa-square-twitter fa-2xl cc-icolor"></i></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row py-4 bg-dark">
+          <p class="text-center fs-4 redressed text-light">Hello Maroc <i class="fa-regular fa-copyright fa-lg"></i> 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--lien pour utiliser js de Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/updateCartCount.js"></script>
+  </body>
+</html>

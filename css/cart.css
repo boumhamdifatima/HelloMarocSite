@@ -1,0 +1,118 @@
+
+
+/*Baniere cart achat*/
+.banner-cart{
+	background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/cart/falaise.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 400px;
+	font-size: 80px;
+	font-weight: 400;
+	color: white;
+}
+.cc-bg-cartshop{
+	background-image: url(../images/cart/shopcart.png);
+	background-size: cover;
+	background-position: center;
+    height: 40px;
+	width: 30px;
+}
+#cart-container {
+	overflow: auto;
+}
+#cart-container table{
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+#cart-container table thead td{
+	background-color: rgb(50, 68, 110);
+	color: white;
+	border: none;
+	padding: 6px 0;
+}
+#cart-container table td,
+#cart-container table td:nth-child(5) input{
+	border: 1px solid white;
+	text-align: center;
+}
+#cart-container table td:nth-child(1){
+	width: 100px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3){
+	width: 200px;
+	overflow: auto;
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6){
+	width: 170px;
+}
+#cart-container table tbody img{
+	width: 100px;
+	height: 80px;
+	object-fit: cover;
+}
+#cart-bottom .coupon>div,
+.cc-serviform input{
+	border: 1px solid rgb(193, 235, 242);
+}
+#cart-bottom .coupon h5{
+	background-color: rgb(50, 68, 110);
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	font-weight: bolder;
+}
+#cart-bottom .coupon p,
+#cart-bottom .coupon input,
+#cart-bottom .coupon button,
+#cart-bottom .total div>div{
+	padding: 0 10px;
+}
+#cart-bottom .coupon input,
+#cart-bottom .coupon button,
+#cart-bottom .total div button{
+	height: 40px;
+	border: 1px solid rgb(10, 148, 102);
+	
+}
+#cart-bottom .coupon input{
+	margin: 0 0 20px 10px;
+}
+#cart-bottom .coupon button,
+#cart-bottom .total div button{
+	background-color:rgb(10, 148, 102) ;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.cc-hr-total{
+	background-color:rgb(101, 224, 246);
+	color: rgb(101, 224, 246);
+	height: 5px;
+	width: 100%;
+	margin: 0 auto;
+}
+#cart-bottom .total div button{
+	margin: 0 10px 10px auto;
+	display: flex;
+	align-items: center;
+}
+.cc-servipers{
+	display: flex;
+	justify-content: space-between;
+}
+.cc-list-pers p{
+	color: rgb(50, 68, 110);
+	background-color: rgb(224, 243, 246);
+	text-align: start;
+	
+}
+.cc-h5-total-card{
+	background-color: rgb(50, 68, 110);
+	color: white;
+	text-align: center;
+}

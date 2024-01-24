@@ -1,0 +1,334 @@
+/*-------------------------------------------------------------*/
+/*------------------Projet CREATION SITE WEB-------------------*/
+/*-------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Redressed&display=swap');
+
+.merriweather{
+    font-family: 'Merriweather',serif;
+}
+.redressed{
+    font-family: 'Redressed', cursive;
+}
+.cc-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: 'Merriweather', serif;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    z-index: 99;
+}
+.cc-navbar .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease ;
+}
+.cc-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-color: var(--bs-teal) ;
+}
+.logo{
+    width: 150px;
+     height: 80px;
+}
+.banner,
+.contact-form{
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/kasbah.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.banner-merveilles {
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/bijoux.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.banner-casablanca {
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/plage.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.banner-ouzoud {
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/Cascades_dOuzoud.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.banner-merzouga {
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/sahara1.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.banner-toubkal {
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/taubkal.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.banner-essaouira {
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/essaouira.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.banner-desc{
+font-size: 80px;
+font-weight: 400;
+color: white;
+}
+.cc-bannoscircuit{
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/trekking.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.cc-menu{
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/morocco-coucheSoleil.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.btn-order{
+    color: var(--bs-teal);
+    border-color: var(--bs--teal);
+    transition: 0.5s;
+}
+.btn-order:hover,
+.btn-order:active{
+    color: white;
+    background-color: var(--bs-teal);
+}
+.cc-footer{
+    background-color: rgba(213, 245, 246,0.5);
+}
+.cc-sousmenu{
+    background-color: transparent;
+    border: none;
+}
+.cc-sousmenu a{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease ;
+}
+.cc-sousmenu a:hover{
+    padding-bottom: 20px;
+    color: white;
+    border-color: var(--bs-teal);
+    background-color: transparent;
+}
+.cc-icolor{
+    color: var(--bs-teal);
+}
+.logofooter{
+    width: 200px;
+    height: 120px;
+}
+.cc-iframesize{
+    width: 100%;
+    height: 80%;
+}
+.cc-bg-contact{
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), 
+    url(../images/carousel1/sahara3.jpg) center center fixed no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+/*/////*/
+.card-img-top:hover{
+    opacity: 50%;
+}
+/*.carousel-inner{
+    height: 790px;
+    
+}
+*/
+
+/*// Payement ///*/
+.payment {
+    background:rgba(213, 245, 246, 0.5);
+    max-width: 460px;
+    margin: 80px auto;
+    height: auto;
+    padding: 35px;
+    padding-top: 70px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.payment h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #33b49d;
+}
+
+.form .label {
+    display: block;
+    color: #0a0a0a;
+    margin-bottom: 6px;
+}
+
+.input {
+    padding: 13px 0px 13px 25px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #faf6f6;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    outline: none;
+    font-size: 16px;
+    color: #0c0c0c;
+}
+
+.card-grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 48%;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.icon-relative {
+    position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    font-size: 20px;
+    color: #5fc7a5;
+}
+
+
+
+
+.payment-logo {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 100px;
+    background-image: url(../images/logo2.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.payment-logo:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+
+}
+
+
+@media screen and (max-width: 420px) {
+    .card-grp {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+.cc-details-footer .cc-footer{
+    background-color: rgba(213, 245, 246);
+}
+/*//////*/
+
+
+.modal-succes {
+    color: #636363;
+    width: 325px;
+    margin: 30px auto;
+}
+
+.modal-succes .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-succes .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.modal-succes .form-control,
+.modal-confirm .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.modal-succes .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.modal-succes .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.modal-succes.icon-box {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #82ce34;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-succes .icon-box i {
+    font-size: 58px;
+    position: relative;
+    top: 3px;
+}
+
+.modal-succes.modal-dialog {
+    margin-top: 80px;
+}
+
+.modal-succes .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #83eff3;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+
+}
+
+.modal-succes .btn:hover,
+.modal-succes .btn:focus {
+    background: #6ecdc2;
+    outline: none;
+}
+
+.modal-succes a {
+    text-decoration: none;
+}

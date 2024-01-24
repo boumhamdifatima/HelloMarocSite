@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Maroc Panier</title>
+    <!--Lien css pour utiliser les icones Font AweSome-->
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	
+    <!--Lien pour utiser les styles css de Bootstrap-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+
+    <!--Lien vers notre fichier de style css-->
+
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/cart.css">
+	
+  </head>
+  <body>
+    <header class="cc-headercart"></header>
+	
+	<section class="banner-cart d-flex justify-content-center align-items-center pt-5">
+		<div class="container my-5 py-5">
+		  <div class="row justify-content-center align-items-center">
+			<div class="col-md-10 text-center">
+			  <h1 class="text-capitalize redressed py-3 banner-desc">Panier d'achat</h1>
+			</div>
+		  </div>
+		</div>
+	</section>
+
+	<section id="cart-container" class="container my-5 fw-bold">
+		<table class="w-100">
+			<thead>
+				<tr>
+					<td>Supprimer</td>
+					<td>Image</td>
+					<td>Titre</td>
+					<td>Prix</td>
+					<td>Nombre de Personnes</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tbody id="cc-card-merveilles" class="cc-div-card"></tbody>
+			<tbody id="cc-card-casablanca" class="cc-div-card"></tbody>
+			<tbody id="cc-card-Ouzoud" class="cc-div-card"></tbody>
+			<tbody id="cc-card-Merzouga" class="cc-div-card"></tbody>
+			<tbody id="cc-card-Toubkal" class="cc-div-card"></tbody>
+			<tbody id="cc-card-Essaouira" class="cc-div-card"></tbody>
+			
+		</table>
+	</section>
+
+	<section id="cart-bottom" class="container">
+		<di class="row mb-5">
+			<div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+				<!--
+				<div>
+					<h5>PROMOTION</h5>
+					<p>Entrer votre code promotion</p>
+					<input type="text" placeholder="Code Promotion">
+					<button>APPLIQUER</button>
+				</div>
+				-->
+			</div>
+			<div class="total col-lg-6 col-md-6 col-12">
+				<div>
+					<h5 class="cc-h5-total-card">TOTAL PANIER</h5>
+					<div class="d-flex justify-content-between">
+						<h6>Sous-Total</h6>
+						<p id="cc-sous-total">0.00$</p>
+					</div>
+					<div class="d-flex justify-content-between">
+						<h6>Taxes</h6>
+						<p id="cc-taxes">0.00$</p>
+					</div>
+					<hr class="cc-hr-total">
+					<div id="prix" class="d-flex justify-content-between">
+						<h6>Total</h6>
+						<p id="cc-total-prix">0.00$</p>
+					</div>
+					<!--<button>PASSER A LA CAISSE</button>-->
+				</div>
+			</div>
+		</di>
+		<!--Modal pour passer a la caisse-->
+		<div class="container">
+			<div class=" text-end">
+				<button type="button" id="cc-passer-caisse" class="btn btn-primary btn-lg mb-5" data-bs-toggle="modal" data-bs-target="#myModal">PASSER
+					A LA CAISSE
+				</button>
+			</div>
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Information sur paiement</h4>
+						</div>
+						<div class="modal-body">
+							<div class="wrapper">
+								<div class="payment">
+									<div class="payment-logo">
+									</div>
+									<h2>Information sur le paiement</h2>
+									<div class="col-12 p-0 px-4">
+										<div class="d-flex align-items-center my-3">
+											<span class="text-muted text-uppercase">Vous devez payer:</span>
+											<span class="c-g ps-1">$ <span id="money"></span></span>
+										</div>
+									</div>
+									<form id="paymentForm" class="needs-validation" novalidate>
+										<div class="card space icon-relative">
+										</div>
+										<i class="fas fa-user"></i>
+										<label for="validationDefault01" class="form-label">Nom Prenom:</label>
+										<input type="text" class="form-control" id="validationDefault01"
+											placeholder="Nom Prenom " required>
+										<div class="card-item icon-relative"></div>
+										<i class="far fa-credit-card"></i>
+										<label for="cardNumber">Numero Card:</label>
+										<input type="text" class="form-control" id="cardNumber"
+											data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000" required>
+										<div class="invalid-feedback">
+											Entres le numero de card
+										</div>
+										<div class="form-group">
+										</div>
+										<i class="far fa-calendar-alt"></i>
+										<label for="expiryDate">Date d'expiration:</label>
+										<input type="text" class="form-control" id="expiryDate" data-mask="00 / 00"
+											placeholder="mm / yy" required>
+										<div class="invalid-feedback">
+											Entres la date d'expiration
+										</div>
+										<div class="form-group"></div>
+										<i class="fas fa-lock"></i>
+										<label for="cvv">CVC</label>
+										<input type="text" class="form-control" id="cvc" data-mask="000"
+											placeholder="000" required>
+										<div class="invalid-feedback">
+											Entres le 3 chiffre derrier la carte .
+										</div>
+										<button type="submit" class="btn btn-primary">Payer</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- Success modal -->
+						<div class="modal" id="successModal">
+							<div class="modal-dialog modal-succes">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="icon-box">
+											<i class="fa-regular fa-circle-check" style="color: #5cd4d6;"></i>
+											<h5 class="modal-title">Success! </h5>
+										</div>
+									</div>
+									<div class="modal-body">
+										<p>Votre paiement a étais effectué avec succès!</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-info btn-block"><a href="../index.html">
+												Acceuil
+										</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="cc-footer pt-5"></footer>
+
+    <!--lien pour utiliser js de Bootstrap-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+	<script src="../js/jquery-3.6.4.min.js"></script>
+	<script src="../js/updateCartCount.js"></script>
+	<script src="../js/addtocart.js"></script>
+	<script src="../js/managecart.js"></script>
+	<!--lien pour utiliser payement-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="../js/pay.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+  </body>
+</html>
