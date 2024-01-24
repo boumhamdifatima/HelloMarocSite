@@ -1,5 +1,5 @@
 # HelloMarocSite
-This is an e-commerce web site (Front-End) selling tourist circuits developed using Javascript/JQuery, HTML5 and CSS3.
+This is an e-commerce web site (Front-End) selling tourist circuits developed using Javascript/JQuery, HTML5 and CSS3(Bootstrap).
 
 ## HelloMarocSite Description
 
